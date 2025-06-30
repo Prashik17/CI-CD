@@ -6,11 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Prashik17/CI-CD.git'
-            }
-        }
+
 
         stage('Build JAR') {
             steps {
