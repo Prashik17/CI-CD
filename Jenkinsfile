@@ -6,7 +6,7 @@ pipeline {
 
     stages {
         steps {
-            git ''
+            git 'https://github.com/Prashik17/CI-CD.git'
         }
     }
 
@@ -24,7 +24,7 @@ pipeline {
 
     stage('Load to Minikube') {
         steps {
-            sh 'minikube image load $IMAGE_NAME:lates'
+            sh 'minikube image load $IMAGE_NAME:latest'
         }
     }
 
